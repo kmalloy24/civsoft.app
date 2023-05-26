@@ -52,24 +52,23 @@
 #  pageRef = "pagTest"
 #  weight = 1000
 
-# [[main]]
-#   identifier = "twitter"
-#   pre = "twitter"
-#   url = "https://twitter.com/burufugu"
-#   weight = 60
+[[main]]
+  identifier = "phone"
+  pre = "phone"
+  url = "https://calendly.com/kyle-malloy/meeting"
+  weight = 60
 
-# [[main]]
-#   identifier = "mastodon"
-#   pre = "mastodon"
-#   url = "https://masto.ai/@blowfish"
-#   weight = 70
+[[main]]
+  identifier = "email"
+  pre = "email"
+  url = "mailto:kyle@malloy.dev"
+  weight = 70
 
-# [[main]]
-#   identifier = "github"
-#   pre = "github"
-#   url = "https://github.com/nunocoracao/blowfish"
-#   weight = 80
-
+[[main]]
+  identifier = "twitter"
+  pre = "twitter"
+  url = "https://twitter.com/civsoftapp"
+  weight = 80
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

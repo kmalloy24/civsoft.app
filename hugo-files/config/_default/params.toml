@@ -7,7 +7,7 @@
 
 colorScheme = "blowfish"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
 enableSearch = false
 enableCodeCopy = true
@@ -30,12 +30,12 @@ smartTOCHideUnfocusedChildren = true
   showMenu = true
   showCopyright = true
   showThemeAttribution = false
-  showAppearanceSwitcher = true
+  showAppearanceSwitcher = false
   showScrollToTop = false
 
 [homepage]
-  layout = "custom" # valid options: page, profile, hero, card, background, custom
-  # homepageImage = "/img/iceland.jpg" # used in: hero, and card
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "/img/bg.svg" # used in: hero, and card
   showRecent = false
   showRecentItems = 10
   showMoreLink = true
@@ -112,13 +112,13 @@ smartTOCHideUnfocusedChildren = true
   
 
 [firebase]
-  apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"
-  authDomain = "blowfish-21fff.firebaseapp.com"
-  projectId = "blowfish-21fff"
-  storageBucket = "blowfish-21fff.appspot.com"
-  messagingSenderId = "60108104191"
-  appId = "1:60108104191:web:039842ebe1370698b487ca"
-  measurementId = "G-PEDMYR1V0K"
+  # apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"
+  # authDomain = "blowfish-21fff.firebaseapp.com"
+  # projectId = "blowfish-21fff"
+  # storageBucket = "blowfish-21fff.appspot.com"
+  # messagingSenderId = "60108104191"
+  # appId = "1:60108104191:web:039842ebe1370698b487ca"
+  # measurementId = "G-PEDMYR1V0K"
 
 [fathomAnalytics]
   # site = "ABC12345"

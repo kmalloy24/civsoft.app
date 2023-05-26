@@ -9,31 +9,26 @@
                     {{ with .Site.Params.homepage.homepageImage }}{{ $homepageImage = resources.Get . }}{{ end }}
                     {{ if not (eq $homepageImage "") }}
                     <img class="w-full h-[1000px] object-cover m-0 nozoom" src="{{ $homepageImage.RelPermalink }}" role="presentation">
-                    <div
-                        class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
-                    </div>
-                    <div
-                        class="opacity-60 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
-                    </div>
                     {{ end }}
                 </div>
                 <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 flex flex-col items-center justify-center text-center">
-                    {{ with .Site.Author.image }}
+                    <!-- {{ with .Site.Author.image }}
                     {{ $authorImage := resources.Get . }}
                     {{ if $authorImage }}
                     {{ $authorImage := $authorImage.Fill "288x288" }}
                     <img class="mb-2 rounded-full h-36 w-36" width="144" height="144"
                         alt="{{ $.Site.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                     {{ end }}
-                    {{ end }}
+                    {{ end }} -->
                     <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
-                        {{ .Site.Author.name | default .Site.Title }}
+                        🕒 Get more time back in your day 🏗️
                     </h1>
                     {{ with .Site.Author.headline }}
                     <h2 class="mt-0 mb-0 text-xl text-neutral-800 dark:text-neutral-300">
-                        {{ . | markdownify | emojify }}
+                         We make software that works <i>for</i> AEC professionals  <br> ...not against them
                     </h2>
                     {{ end }}
+                    <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
                     <div class="mt-1 mb-10 text-2xl">
                         {{ with .Site.Author.links }}
                         <div class="flex flex-wrap">
@@ -47,7 +42,6 @@
                         </div>
                         {{ end }}
                     </div>
-                    <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
                 </div>
             </div>
         </div>

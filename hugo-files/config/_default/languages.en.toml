@@ -5,10 +5,10 @@ isoCode = "en"
 weight = 1
 rtl = false
 
-title = "Civsoft"
-# logo = "img/logo.png"
+title = ""
+logo = "img/logo.webp"
 description = "CivSoft"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "© 2023 CivSoft LLC"
 
 dateFormat = "2 January 2006"
 
@@ -17,8 +17,8 @@ dateFormat = "2 January 2006"
   image = "img/logo.png"
   headline = "Coming Soon"
   bio = "CivSoft"
-  # links = [
-  #   { twitter = "https://twitter.com/burufugu" },
-  #   { mastodon = "https://masto.ai/@blowfish" },
-  #   { github = "https://github.com/nunocoracao/blowfish" },
-  # ]
+  links = [
+    { phone = "https://calendly.com/kyle-malloy/meeting" },
+    { email = "mailto:kyle@malloy.dev" },
+    { twitter = "https://twitter.com/civsoftapp" },
+  ]
